@@ -1,0 +1,51 @@
+.pointWrapper{
+    display: flex;
+    width: 100%;
+    max-width: 320px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    .textWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        h2{
+            color:  #45413F;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 160%; 
+        }
+        p{
+            width: 100%;
+            max-width: 285px;
+            color: #45413F;
+            text-align: justify;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 160%; 
+        }
+    }
+}
+@media (max-width: 500px) {
+    .pointWrapper{
+     width: 100%;
+     max-width: 343px;
+     .textWrapper{
+         h2{
+             font-size:16px;
+         }
+         p{
+            width: 100%;
+            max-width: 343px;
+             font-size: 12px;
+         }
+     }
+     button{
+         font-size: 12px;
+     }
+    }
+   }

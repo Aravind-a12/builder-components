@@ -1,0 +1,29 @@
+.willeder-inputWrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+  .willeder-input {
+    width: 100%;
+    border: none;
+    font-size: $font-base; 
+  }
+  .willeder-input-label {
+    color:#45413F;
+    font-family: "Noto Serif SC";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; 
+   
+  }
+  .willeder-input-error{
+    color: #FF2626;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+input:focus {
+  outline: none;
+}

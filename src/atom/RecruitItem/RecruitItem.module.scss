@@ -1,0 +1,35 @@
+.wrapper{
+  position: relative;
+    width: 100%;
+    max-width: 308px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .polygonSymbol {
+      width: 29px;
+      height: 29px;
+      transform: rotate(45deg);
+      background-color: #45413F;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px; 
+      .number {
+        transform: rotate(-45deg); 
+        color:  #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 100%;
+      }
+    }
+    p{
+        color: var(--Dark-gray, #45413F);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; 
+        margin: 0;
+    }
+}

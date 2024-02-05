@@ -1,0 +1,63 @@
+.wrapper{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    .top{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        max-height: 32px;
+        padding: 10px 16px;
+        align-items: center;
+        gap: 8px;
+        border-bottom: 1px solid var(--Dark-gray, #45413F);
+         .polygonSymbol::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            transform: rotate(45deg);
+            background-color: black;
+            position: absolute;
+            left:8px;
+            bottom: 10px;
+          }
+          h2{
+            color: var(--Dark-gray, #45413F);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 160%; 
+          }
+    }
+    .text{
+        display: flex;
+        padding: 0px 8px;
+        align-items: flex-start;
+        gap: 10px;
+        p{
+            color:  #45413F;
+            text-align: justify;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 160%; 
+        }
+       
+    }
+}
+@media (max-width: 500px) {
+   .wrapper{
+    .top{
+       h2{
+        font-size: 16px;
+       }
+      
+    }
+    .text{
+        width: 100%;
+        max-width: 283px;
+       }
+   }
+  }

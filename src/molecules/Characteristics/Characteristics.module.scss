@@ -1,0 +1,125 @@
+.charWrapper {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      width: 245px;
+      height: 204px;
+      flex-shrink: 0;
+    }
+  
+    .textWrapper {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+  
+      h2 {
+        width: 100%;
+        max-width: 389px;
+        color: #45413f;
+        text-align: justify;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 100%;
+      }
+  
+      .line {
+        width: 100%;
+        max-width: 458px; 
+        height: 1px;
+        background-color: #ccc;
+        margin: 16px 0; /* Adjust margin as needed */
+      }
+  
+      .polygonSymbol::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        background-color: black;
+        position: absolute;
+        right: 0;
+        top: 51px;
+      }
+      .bottomContent{
+        width: 100%;
+        max-width: 390px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 10px;
+        .heading{
+            color: rgba(0, 0, 0, 0.80);
+            text-align: justify;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%; 
+        }
+        .para{
+            color: var(--Dark-gray, #45413F);
+            text-align: justify;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; 
+        }
+        .textContent{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
+        .readMore{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            justify-content: center;
+           .read{
+            color: var(--Dark-gray, #45413F);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%; 
+           }
+           svg{
+            margin-top: 3px;
+           }
+        }
+      }
+    }
+  
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+  .reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+    .polygonSymbol {
+        position: absolute;
+        left: 2px; /* Adjust left position for reversal */
+        top: 2px;
+
+      }
+      @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+      }
+  }
+  
